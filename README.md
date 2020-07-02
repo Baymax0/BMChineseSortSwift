@@ -1,5 +1,5 @@
 # BMChineseSort的Swift版本
-- `BMChineseSort`是一个为模型、字典、字符串数组。对于多音字的问题，开放了一个映射属性，可手动修改个别多音字或你想要的映射关系。
+- 提供模型、字典、字符串按中文排序的功能。对于多音字的问题，开放了一个映射属性，可手动修改个别多音字或你想要的映射关系。
 - 支持SPM导入
 
 ### 目录
@@ -106,6 +106,5 @@ specialCharSectionTitle| “#” |特殊字符最后单独分组所用的分组�
 specialCharPositionIsFront| YES |特殊字符所在位置 YES = 开头，NO = 结尾
 ignoreModelWithPrefix| “” |剔除 特定字符开头的对象
 polyphoneMapping| 字典 | 多音字手动映射
-
 
 
