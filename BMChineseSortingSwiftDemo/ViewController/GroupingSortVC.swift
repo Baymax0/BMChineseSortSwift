@@ -9,6 +9,7 @@
 import UIKit
 import BMChineseSort
 
+//模型分组排序
 class GroupingSortVC: UITableViewController {
 
     var dataArr = Array<Person>()
@@ -21,7 +22,7 @@ class GroupingSortVC: UITableViewController {
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         // 获得数据
         requestData()
-        
+
         // 分组排序
         BMChineseSort.sortAndGroup(objectArray: dataArr, key: "name") { (isSuccess, _, titleArr, objArr) in
             if isSuccess{

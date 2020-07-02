@@ -9,10 +9,10 @@
 import UIKit
 import BMChineseSort
 
+// 字符串数组 普通排序
 class SortVC: UITableViewController {
     
     var dataArr = ["北京","河北","黑龙江","上海","江苏","浙江","福建","湖北","湖南","广东","海南","重庆","四川","贵州","云南","西藏","陕西","沈阳","长春","abc","baba"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

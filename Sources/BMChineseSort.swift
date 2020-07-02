@@ -25,10 +25,7 @@ public protocol BMChineseSortProtocol {
     ///   - finish: 排序后回调
     static func sortAndGroup<T>( objectArray:Array<T>?,
                                  key:String?,
-                                 finish: @escaping (_ success:Bool,
-        _ unGroupedArr:Array<T>,
-        _ sectionTitleArr:Array<String>,
-        _ sortedObjArr:Array<Array<T>>) ->() )
+                                 finish: @escaping (_ success:Bool, _ unGroupedArr:Array<T>, _ sectionTitleArr:Array<String>, _ sortedObjArr:Array<Array<T>>) ->() )
 }
 
 /// 排序的拼音比较类型枚举
