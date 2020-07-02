@@ -25,7 +25,7 @@ class BMChineseSortModel<Element>{
 
 // MARK: -  ----------------------  实现  ------------------------
 extension BMChineseSort : BMChineseSortProtocol{
-    static func transformChinese(_ word:String) -> String{
+    public static func transformChinese(_ word:String) -> String{
         let str = NSMutableString(string: word) as CFMutableString
         if CFStringTransform(str, nil, kCFStringTransformMandarinLatin, false){
             if CFStringTransform(str, nil, kCFStringTransformStripDiacritics, false){
@@ -38,13 +38,13 @@ extension BMChineseSort : BMChineseSortProtocol{
     
     
     
-    static func sortAndGroup<T>( objectArray:Array<T>?,
+    public static func sortAndGroup<T>( objectArray:Array<T>?,
                                  key:String?,
                                  finish: @escaping (_ success:Bool,
         _ unGroupedArr:Array<T>,
         _ sectionTitleArr:Array<String>,
         _ sortedObjArr:Array<Array<T>>) ->() ){
-        BMChineseSort.share().sortAndGroup(objectArray: objectArray, key: key, finish: finish)
+        BMChineseSort.share.sortAndGroup(objectArray: objectArray, key: key, finish: finish)
     }
     
     /// 排序
@@ -53,7 +53,7 @@ extension BMChineseSort : BMChineseSortProtocol{
     ///   - objectArray: 需要排序的数组
     ///   - key: 需要排序的字段，字符串数组传nil
     ///   - finish: 排序后回调
-    private func sortAndGroup<T>( objectArray:Array<T>?,
+    func sortAndGroup<T>( objectArray:Array<T>?,
                                   key:String?,
                                   finish: @escaping (_ success:Bool,
         _ unGroupedArr:Array<T>,

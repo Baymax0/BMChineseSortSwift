@@ -73,7 +73,7 @@ public class BMChineseSort {
     public static var share: BMChineseSort = BMChineseSort()
     
     // 信号量
-    fileprivate var semaphore = DispatchSemaphore(value: 1)
+    var semaphore = DispatchSemaphore(value: 1)
 }
 
 
