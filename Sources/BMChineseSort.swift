@@ -9,7 +9,7 @@
 import Foundation
 
 /// 开放的两个方法
-protocol BMChineseSortProtocol {
+public protocol BMChineseSortProtocol {
     
     /// 中文对应拼音  eg:"Ad钙奶" -> "Ad gai nai"  结果英文不变 拼音小写
     ///
@@ -32,7 +32,7 @@ protocol BMChineseSortProtocol {
 }
 
 /// 排序的拼音比较类型枚举
-enum BMChineseSortType {
+public enum BMChineseSortType {
     /// 全拼音
     case fullPinyin
     /// 拼音首字母
@@ -54,7 +54,7 @@ class BMChineseSortModel<Element>{
 }
 
 /// 默认属性修改 通过BMChineseSort.share().property = ** 修改
-class BMChineseSort {
+public class BMChineseSort {
     
     //    sortMode = 1 使用原生CFStringTransform 方法转换，比较耗时。全拼音必须使用此设置！
     //    sortMode = 2 使用汉字码表对应的首字母码表 通过编码顺序查找 比较快
