@@ -4,9 +4,10 @@
 
 ### 目录
 - [模型分组排序](#0)
-- [普通排序（不分组）](#1)
-- [汉字转拼音](#2)
-- [参数设置](#3)
+- [模型普通排序（不分组）](#1)
+- [字符串数组排序](#2)
+- [汉字转拼音](#3)
+- [参数设置](#4)
 
 <h2 id="0"> </h2>
 
@@ -62,8 +63,6 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
 ```
 
-
-
 <h2 id="1"> </h2>
 
 ### 普通排序（不分组）
@@ -71,6 +70,12 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
 
 <h2 id="2"> </h2>
+
+### 字符串数组排序
+调用sortAndGroup方法的时候，key传nil，即把模型当作字符串处理
+
+
+<h2 id="3"> </h2>
 
 ### 汉字转拼音
 
