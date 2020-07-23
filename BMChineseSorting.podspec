@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name              = "BMChineseSorting"
-  s.version           = "0.2.5"
+  s.version           = "1.0"
   s.summary           = "BMChineseSort."
   s.homepage          = "https://github.com/Baymax0/BMChineseSortSwift"
   s.license           = { :type => "MIT", :file => "LICENSE" }
